@@ -1,0 +1,200 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF8">
+        <meta http-equip="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Portfolio Project </title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/436d309958.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!--Header Section Starts-->
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="logo.png" alt="logo" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="row">
+                    <div class="header-text-1">
+                        <h1>Hi, I'm <br><span>Venkata Sri Durga.Gaddam</span></h1>
+                        <p>This is my  official portfolio website to show all Details and works </p>
+                    </div>
+                    <div class="header-text-2">
+                        <img src="sri.jpg" alt="user-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Header Section Ends-->
+
+        <!--About Section Starts-->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="user.jpg" alt="user-image">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title"><span>ABOUT ME</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                        
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>  
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>programming:</span><br> <li><p>C C++ DataStructures</p></li></li>
+                                <li><span>Scripting Languages:</span><br><li><p>Java</p></li></li>
+                                <li><span>Web Development:</span><br>Developing Creative Websites</li>   
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2022 - 2026</span><br>B.Tech Tirumala Engineering college -Jonnalagadda</li>
+                                <li><span>2020 - 2022</span><br>Pre-University Course - Narasaraopet</li>
+                                <li><span>2019 - 2020</span><br>SSC at Sri Chaitanya High School - Guntur</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--About Section Ends-->
+
+        <!-- -----Services Section Ends----- -->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">MY SERVICES</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Development</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-java"></i>   
+                        <h2>Full Stack Java</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ----Service Section Ends---- -->
+
+        <!-- Portfolio Section Starts -->
+         <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My WORKS</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="register.jpeg" alt=" registration">
+                        <div class="layer">
+                            <h3>register form</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <a href=https://github.com/GADDAMVENKATASRIDURGA/Validationform><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="calci.png" alt="calculator">
+                        <div class="layer">
+                            <h3>designing Calculator</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <a href="https://github.com/GADDAMVENKATASRIDURGA/Caluclators"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+         </div>
+        <!-- Portfolio Section Ends -->
+
+        <!-- Contact Section Starts -->
+         <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">CONTACT ME</h1>
+                        <p><i class="fa-solid fa-envelope"></i>gaddamsreedurga6@gmail.com</p>
+                        <p> <i class="fa-solid fa-phone"></i>+91 98520960494</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fa-brands fa-medium"></i></a>
+                            <a href="#"><i class="fa-brands fa-square-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="message" rows="6" placeholder="Enter your Message" required></textarea>
+                            <button type="submit" class="btn">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © Venkata Sri Durga Gaddam  <i class="fa-solid fa-heart"></i></p>
+            </div>
+         </div>
+        <!-- Contact Section Ends-->
+
+        <!--Tabs in About Section Script-->
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents= document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add('active-tab');
+            }
+        </script>
+        <!--Side NavBar Script-->
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+        <!--Google Spreadsheet Script-->
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbz3PYoP2RKtJM4br7_8TUJ4XwCap5v_4nWtC3TO5mmtm3C_qf-1u_xK8usFMRKbpiAj3Q/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Thanks for contacting us! Our tean will get in touch with the you shortly."
+                    setTimeout(function(){
+                        msg.innerHTML=""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+    </body>
+</html>
